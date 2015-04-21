@@ -23,6 +23,8 @@ class Board extends Surface {
     cars = new Cars(carCount);
     cars.forEach((Car car) {
       car.space = space;
+      car.x = randomNum(width);
+      car.y = randomNum(height);
     });
     redCar = cars.redCar;
     redCar.space = space;
