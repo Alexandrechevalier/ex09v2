@@ -11,7 +11,7 @@ onOff(end) {
 }
 
 //abstract class Car extends MovablePiece {
- abstract class Car extends Piece {
+abstract class Car extends Piece {
   static const num defaultWidth = 75;
   static const num defaultHeight = 30;
 
@@ -26,9 +26,8 @@ onOff(end) {
 
 class NonRedCar extends Car {
 
-  //NonRedCar(int id) : super(id) {
-  NonRedCar(int id) {
-     this.id = id;
+  NonRedCar(int id) : super(id) {
+    this.id = id;
     dx = randomRangeNum(1, 3);
     dy = randomRangeNum(1, 3);
     color.border = '#3ADF00';

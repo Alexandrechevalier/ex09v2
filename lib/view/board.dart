@@ -17,9 +17,9 @@ class Board extends Surface {
   num mix = 100;
 
   //Board(CanvasElement canvas) : super(canvas) {
-  Board(CanvasElement canvas){
+  Board(CanvasElement canvas) {
     this.canvas = canvas;
-    space = new Area(width, height);
+    space = new Area.from(width, height);
     cars = new Cars(carCount);
     cars.forEach((Car car) {
       car.space = space;
